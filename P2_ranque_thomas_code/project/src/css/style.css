@@ -1,4 +1,106 @@
-body {
-  box-sizing: border-box;
+:root {
+  --bleu: #0065FC;
+  --bleu-ciel: #DEEBFF;
+  --gris: #F2F2F2;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: large;
+  color: black;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: var(--bleu)
+}
+
+body {
+  box-sizing: border-box;
+  background: #FFF;
+}
+
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 0 50px;
+}
+
+#logo {
+  margin-top: 30px;
+}
+
+nav {
+  display: flex;
+}
+
+nav > a {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-top: 4px solid #FFF;
+  border-bottom: 4px solid #FFF;
+}
+
+nav > a:hover {
+  border-top: 4px solid var(--bleu);
+  border-bottom: 4px solid #FFF;
+  color: var(--bleu);
+}
+
+#active {
+  border-top: 4px solid var(--bleu);
+  border-bottom: 4px solid #FFF;
+  color: var(--bleu);
+}
+
+@media screen and (max-width: 992px)
+          and (min-width: 769px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: x-large;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+  }
+
+  header > * {
+    text-align: center;
+  }
+
+  #logo {
+    margin-left: 15%;
+  }
+
+  nav {
+  }
+
+  nav > a {
+    flex-grow: 1;
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+
+  nav > a:hover {
+    border-top: 4px solid #FFF;
+    border-bottom: 4px solid var(--bleu);
+  }
+
+  #active {
+    border-top: 4px solid #FFF;
+    border-bottom: 4px solid var(--bleu);
+  }
+}

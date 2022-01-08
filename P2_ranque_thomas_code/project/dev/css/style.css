@@ -1,4 +1,116 @@
-body {
-  box-sizing: border-box;
+:root {
+  --bleu: #0065FC;
+  --bleu-ciel: #DEEBFF;
+  --gris: #F2F2F2;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: large;
+  color: black;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: var(--bleu)
+}
+
+body {
+  box-sizing: border-box;
+  background: #FFF;
+}
+
+
+/* HEADER */
+
+header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  padding: 0 50px;
+}
+
+#logo {
+  margin-top: 30px;
+}
+
+nav {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav > a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 20px;
+  border-top: 4px solid #FFF;
+  border-bottom: 4px solid #FFF;
+}
+
+nav > a:hover {
+  border-top: 4px solid var(--bleu);
+  border-bottom: 4px solid #FFF;
+  color: var(--bleu);
+}
+
+#active {
+  border-top: 4px solid var(--bleu);
+  border-bottom: 4px solid #FFF;
+  color: var(--bleu);
+}
+
+@media screen and (max-width: 992px)
+          and (min-width: 769px) {
+
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: x-large;
+  }
+
+  header {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: stretch;
+        align-items: stretch;
+    padding: 0;
+  }
+
+  header > * {
+    text-align: center;
+  }
+
+  #logo {
+    margin-left: 15%;
+  }
+
+  nav {
+  }
+
+  nav > a {
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 15px 0;
+  }
+
+
+  nav > a:hover {
+    border-top: 4px solid #FFF;
+    border-bottom: 4px solid var(--bleu);
+  }
+
+  #active {
+    border-top: 4px solid #FFF;
+    border-bottom: 4px solid var(--bleu);
+  }
+}
