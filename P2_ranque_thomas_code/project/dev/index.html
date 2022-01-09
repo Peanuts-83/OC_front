@@ -9,20 +9,85 @@
   <!--Fonts management-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
   <!--Styles management-->
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/section.css">
+  <link rel="stylesheet" href="./css/aside.css">
+  <link rel="stylesheet" href="./css/footer.css">
   <title>Booki</title>
 </head>
 
 <body>
   <header>
-    
-  </header>
+    <a href="#"><img src="./images/logo/Booki.png" alt="Logo Booki" id="logo"></a>
+    <nav>
+      <a href="#" id="active">
+        <div>Hébergements</div>
+      </a>
+      <a href="#">
+        <div>Activités</div>
+      </a>
+    </nav>
 
+  </header>
+  <main>
+    <form onsubmit="preventDefault()" method="post" id="searchForm">
+      <fieldset>
+        <strong>
+          Trouvez votre hébergement pour des vacances de rêve
+        </strong>
+        <p>
+          En plein centre ville ou en pleine nature
+        </p>
+
+        <div class="search">
+          <div id="ico"><i class="fas fa-map-marker-alt"></i></div>
+          <input type="text" name="town" id="townSearch" placeholder="Marseille, France">
+          <button type="submit" form="searchForm" value="Submit" id="btnSearch">Rechercher</button>
+        </div>
+
+
+        <div class="options">
+          <p>Filtres</p>
+          <div>
+            <input type="checkbox" name="filter" class="filter" id="economique">
+            <label for="economique" id="eco">Économique</label>
+            <input type="checkbox" name="filter" class="filter" id="familial">
+            <label for="familial" id="fam">Familial</label>
+            <input type="checkbox" name="filter" class="filter" id="romantique">
+            <label for="romantique" id="rom">Romantique</label>
+            <input type="checkbox" name="filter" class="filter" id="animaux">
+            <label for="animaux" id="ani">Animaux autorisés</label>
+          </div>
+
+        </div>
+        <div class="info">
+          <div>
+            <i class="fas fa-info"></i>
+          </div>
+          <span>Plus de 500 logements sont disponibles dans cette ville</span>
+        </div>
+
+      </fieldset>
+    </form>
+  </main>
+
+  <script>
+    const searchBtn = document.querySelector('#btnSearch');
+    function changeBtnSearch() {
+      let width = window.innerWidth;
+      let icon = '<i class="fas fa-search"></i>';
+      width <= 768 ? searchBtn.innerHTML = icon : searchBtn.innerHTML = 'Rechercher';
+    }
+    window.onresize = changeBtnSearch;
+  </script>
 </body>
 
 </html>
