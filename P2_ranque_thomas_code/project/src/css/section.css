@@ -44,8 +44,7 @@ aside > div:first-child {
 #hebergements > .container {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  background: black;
+  gap: 30px;
 }
 
 #populaires {
@@ -56,6 +55,7 @@ aside > div:first-child {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
 aside > .container {
@@ -100,7 +100,6 @@ aside > .container {
 
 #populaires .card {
   display: flex;
-  margin: 0 5% 40px 5%;
   background: white;
   border: 6px solid white;
   border-radius: 15px;
