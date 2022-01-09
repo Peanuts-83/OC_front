@@ -19,7 +19,6 @@ module.exports = function (grunt) {
                     './dev/css/header.css': './src/css/header.css',
                     './dev/css/form.css': './src/css/form.css',
                     './dev/css/section.css': './src/css/section.css',
-                    './dev/css/aside.css': './src/css/aside.css',
                     './dev/css/footer.css': './src/css/footer.css',
                 }
             }

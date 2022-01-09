@@ -1,9 +1,210 @@
-section {
-  padding: 40px 30px;
-  border-radius: 30px;
-  background: var(--gris-light2);
+.main-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
 }
 
-section > p > strong {
+section {
+  padding: 30px 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  border-radius: 30px;
+  background: var(--gris-light2);
+  margin: 0 20px;
+}
+
+aside {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 60px 0;
+  margin: 0 20px;
+}
+
+section > div:first-child,
+aside > div:first-child {
+  padding: 10px;
+  margin-bottom: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: baseline;
+      align-items: baseline;
   font-size: x-large;
+}
+
+.card:hover {
+  box-shadow: 0 5px 20px grey;
+}
+
+#icon-pop {
+  font-size: xx-large;
+}
+
+#hebergements {
+  width: 70%;
+}
+
+#hebergements > .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+  background: black;
+}
+
+#populaires {
+  width: 30%;
+}
+
+#populaires > .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+aside > .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  height: 450px;
+}
+
+/* CARDS */
+
+#hebergements .card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 250px;
+  max-width: 400px;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  background: white;
+  border: 6px solid white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px grey;
+}
+
+#hebergements .card-image {
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+
+#hebergements .card-image img {
+  width: 150%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-property: transform width;
+  transition-duration: .3s;
+}
+
+
+#populaires .card {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 5% 40px 5%;
+  background: white;
+  border: 6px solid white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px grey;
+}
+
+#populaires .card-image {
+  width: 40%;
+  min-width: 80px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px 0 0 15px;
+}
+
+#populaires .card-image img {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-property: transform width;
+  transition-duration: .3s;
+}
+
+
+aside .card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex: 1 1 25%;
+      flex: 1 1 25%;
+  width: 250px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px grey;
+
+}
+
+aside .card-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+
+aside .card-image img {
+  height: 180%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-property: transform width;
+  transition-duration: .3s;
+}
+
+aside .card-body {
+  height: 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 0 0 30px;
+      flex: 0 0 30px;
+}
+
+aside .card-title {
+  padding-top: 15px;
+}
+
+
+
+
+.card-body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding: 10px;
+}
+
+.card-rating {
+  justify-self: flex-end;
 }
