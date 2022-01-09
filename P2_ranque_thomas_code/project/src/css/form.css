@@ -106,7 +106,14 @@ input[type=checkbox] {
   background: rgba(0,0,0,0);
 }
 
+.options label:hover {
+  border: 2px solid var(--bleu);
+}
+
 .options label::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   content: "";
   position: absolute;
   top: -2px;
@@ -116,39 +123,30 @@ input[type=checkbox] {
   background: var(--bleu-ciel);
   border-radius: 50%;
   z-index: 1;
+  color: var(--bleu);
+  font-size: large;
 }
+
 
 #eco::before {
   font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   content: "\f53a";
-  font-size: large;
-  text-align: center;
-  color: var(--bleu);
 }
 #fam::before {
   font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   content: "\f1ae";
-  font-size: large;
-  text-align: center;
-  color: var(--bleu);
 }
 #rom::before {
   font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   content: "\f004";
-  font-size: large;
-  text-align: center;
-  color: var(--bleu);
 }
 #ani::before {
   font-family: "Font Awesome 5 Pro";
   font-weight: 900;
   content: "\f6d3";
-  font-size: large;
-  text-align: center;
-  color: var(--bleu);
 }
 
 input[type="checkbox"]:checked + label {
@@ -160,7 +158,6 @@ input[type="checkbox"]:checked + label {
 
 input[type="checkbox"]:checked + label::before {
   left: calc(100% - 40px);
-  color: black;
 }
 
 label, .options label::before {
