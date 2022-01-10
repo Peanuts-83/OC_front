@@ -1,5 +1,9 @@
 /* MAIN */
 main {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   margin: 0 40px;
 }
 
