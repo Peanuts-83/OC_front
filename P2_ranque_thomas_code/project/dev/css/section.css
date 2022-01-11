@@ -3,17 +3,17 @@
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
+  gap: 40px;
 }
 
 section {
-  padding: 30px 20px;
+  padding: 30px 40px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   border-radius: 30px;
-  background: var(--gris-light2);
-  margin: 0 20px;
+  background: var(--gris-light);
 }
 
 aside {
@@ -21,8 +21,7 @@ aside {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  padding: 60px 0;
-  margin: 0 20px;
+  margin-top: 20px;
 }
 
 section > div:first-child,
@@ -38,12 +37,8 @@ aside > div:first-child {
   font-size: x-large;
 }
 
-.card:hover {
-  box-shadow: 0 5px 20px grey;
-}
-
-#icon-pop {
-  font-size: xx-large;
+#icon-popu {
+  font-size: x-large;
 }
 
 #hebergements {
@@ -55,8 +50,7 @@ aside > div:first-child {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 40px;
-  background: black;
+  gap: 30px;
 }
 
 #populaires {
@@ -70,6 +64,7 @@ aside > div:first-child {
       flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 30px;
 }
 
 aside > .container {
@@ -83,21 +78,105 @@ aside > .container {
   height: 450px;
 }
 
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  .main-content {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+
+  #populaires {
+    -ms-flex-order: 1;
+        order: 1;
+    width: auto;
+  }
+
+  #hebergements {
+    -ms-flex-order: 2;
+        order: 2;
+    width: auto;
+  }
+
+  aside > .container {
+    background: greenyellow;
+    height: auto;
+  }
+
+
+  aside .card {
+    width: auto;
+  }
+
+  aside .card-image {
+    width: 100vw;
+  }
+
+  aside .card-body, aside .card-title {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    gap: 0;
+  }
+
+  section {
+    padding: 30px 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    border-radius: 0;
+    background: var(--gris-light);
+  }
+
+  aside {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    margin-top: 20px;
+  }
+
+  #populaires {
+    -ms-flex-order: 1;
+        order: 1;
+    width: auto;
+  }
+
+  #hebergements {
+    -ms-flex-order: 2;
+        order: 2;
+    width: auto;
+    background: white;
+  }
+
+  aside > .container {
+    background: greenyellow;
+    height: auto;
+  }
+}
+
 /* CARDS */
+.card img {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-property: transform width;
+  transition-duration: .3s;
+}
 
 #hebergements .card {
-  display: -ms-flexbox;
-  display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   width: 250px;
-  max-width: 400px;
+  max-width: 600px;
   -ms-flex-positive: 1;
       flex-grow: 1;
-  background: white;
   border: 6px solid white;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px grey;
 }
 
 #hebergements .card-image {
@@ -110,26 +189,15 @@ aside > .container {
 #hebergements .card-image img {
   width: 150%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition-property: transform width;
-  transition-duration: .3s;
 }
 
 
 #populaires .card {
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 5% 40px 5%;
-  background: white;
   border: 6px solid white;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px grey;
 }
 
 #populaires .card-image {
-  width: 40%;
+  width: 35%;
   min-width: 80px;
   height: 150px;
   position: relative;
@@ -140,11 +208,6 @@ aside > .container {
 #populaires .card-image img {
   width: 300px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition-property: transform width;
-  transition-duration: .3s;
 }
 
 
@@ -153,13 +216,10 @@ aside .card {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex: 1 1 25%;
-      flex: 1 1 25%;
-  width: 250px;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  width: 23%;
   background: white;
-  border-radius: 15px;
-  box-shadow: 0 5px 20px grey;
-
 }
 
 aside .card-image {
@@ -169,13 +229,7 @@ aside .card-image {
 }
 
 aside .card-image img {
-  height: 180%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transition-property: transform width;
-  transition-duration: .3s;
 }
 
 aside .card-body {
@@ -189,8 +243,6 @@ aside .card-body {
 aside .card-title {
   padding-top: 15px;
 }
-
-
 
 
 .card-body {
@@ -207,4 +259,21 @@ aside .card-title {
 
 .card-rating {
   justify-self: flex-end;
+}
+
+.card {
+  box-shadow: 0 5px 20px var(--gris-light2);
+  border-radius: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+}
+
+/* CARD hover */
+.card:hover {
+  box-shadow: 0 5px 20px var(--gris-med);
+}
+
+.card:hover img {
+  filter: brightness(120%);
 }

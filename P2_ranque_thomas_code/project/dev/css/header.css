@@ -4,12 +4,12 @@
   --bleu-ciel: #DEEBFF;
   --gris-light: #F2F2F2;
   --gris-light2: #dddddd;
-  --gris-med: #d0d0d0;
+  --gris-med: #b6b6b6;
   font-family: Raleway;
   font-weight: 400;
   font-size: medium;
   color: black;
-  background: var(--gris-light);
+  background: white;
 }
 
 a {
@@ -35,7 +35,7 @@ header {
       justify-content: space-between;
   -ms-flex-align: stretch;
       align-items: stretch;
-  padding: 0 50px;
+  padding: 0 40px;
 }
 
 #logo {
@@ -53,26 +53,25 @@ nav > a {
   -ms-flex-align: center;
       align-items: center;
   padding: 0 20px;
-  border-top: 4px solid var(--gris-light);
-  border-bottom: 4px solid var(--gris-light);
+  border-top: 4px solid rgba(255,255,255,0);
+  border-bottom: 4px solid rgba(255,255,255,0);
   font-size: large;
   font-weight: 500;
 }
 
 nav > a:hover {
   border-top: 4px solid var(--bleu);
-  border-bottom: 4px solid var(--gris-light);
+  border-bottom: 4px solid rgba(255,255,255,0);
   color: var(--bleu);
 }
 
 #active {
   border-top: 4px solid var(--bleu);
-  border-bottom: 4px solid var(--gris-light);
+  border-bottom: 4px solid rgba(255,255,255,0);
   color: var(--bleu);
 }
 
-@media screen and (max-width: 992px)
-          and (min-width: 769px) {
+@media screen and (max-width: 992px) and (min-width: 769px) {
 
 }
 
@@ -106,12 +105,12 @@ nav > a:hover {
   }
 
   nav > a:hover {
-    border-top: 4px solid var(--gris-light);
+    border-top: 4px solid rgba(255,255,255,0);
     border-bottom: 4px solid var(--bleu);
   }
 
   #active {
-    border-top: 4px solid var(--gris-light);
+    border-top: 4px solid rgba(255,255,255,0);
     border-bottom: 4px solid var(--bleu);
   }
 }
