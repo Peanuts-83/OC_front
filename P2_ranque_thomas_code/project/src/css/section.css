@@ -82,7 +82,7 @@ aside > .container {
   top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition-property: transform width;
+  transition-property: transform;
   transition-duration: .3s;
   position: absolute;
 }
@@ -118,13 +118,13 @@ aside > .container {
 
 #populaires .card {
   min-height: 150px;
-  flex: 1 0 1;
+  flex: 1;
   border: 6px solid white;
 }
 
 #populaires .card-image {
   min-width: 40%;
-  flex: 1 1 1;
+  flex: 1;
   min-height: 150px;
   position: relative;
   overflow: hidden;
@@ -231,21 +231,21 @@ aside .card:nth-child(6) .card-image {
   }
 
   aside .card:first-child .card-image {
-    height: 120px;
+    height: 150px;
   }aside .card:nth-child(2) .card-image {
-    height: 120px;
+    height: 150px;
   }
   aside .card:nth-child(3) .card-image {
-    height: 120px;
+    height: 150px;
   }
   aside .card:nth-child(4) .card-image {
-    height: 120px;
+    height: 150px;
   }
   aside .card:nth-child(5) .card-image {
-    height: 120px;
+    height: 150px;
   }
   aside .card:nth-child(6) .card-image {
-    height: 120px;
+    height: 150px;
   }
 
   aside img {
@@ -291,7 +291,7 @@ aside .card:nth-child(6) .card-image {
   }
 
   #hebergements .card-image {
-    min-height: 120px;
+    min-height: 150px;
   }
 
   #populaires {
