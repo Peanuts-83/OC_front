@@ -47,11 +47,13 @@
           En plein centre ville ou en pleine nature
         </p>
 
-         <!--TODO: bt change(loupe) on small size-->
+
         <div class="search">
           <div id="ico"><i class="fas fa-map-marker-alt"></i></div>
           <input type="text" name="town" id="townSearch" placeholder="Marseille, France">
-          <button type="submit" form="searchForm" value="Submit" id="btnSearch">Rechercher</button>
+          <button type="submit" form="searchForm" value="Submit" id="btnSearch">
+            <span id="loupe"><i class="fas fa-search"></i></span>
+            <span id="rechercher">Rechercher</span></button>
         </div>
 
 
@@ -266,6 +268,9 @@
             </a>
           </div>
         </div>
+        <a href="#">
+          <p id="afficherPlus">Afficher plus</p>
+        </a>
       </section>
 
 
@@ -369,7 +374,7 @@
       </section>
     </div>
 
-     <!--TODO: fix ASIDE for tablets & mobils-->
+
     <aside>
       <div>
         <a href="#"><strong>Activités à Marseille</strong></a>
@@ -477,20 +482,6 @@
    <!--TODO: add FOOTER section-->
 
 
-  <!--TODO: delete all JS!-->
-  <script>
-    const searchBtn = document.querySelector('#btnSearch');
-    const asideImg = document.querySelectorAll('aside .card-image');
-
-    function changeBtnSearch() {
-      let width = window.innerWidth;
-      let icon = '<i class="fas fa-search"></i>';
-      width <= 768 ? searchBtn.innerHTML = icon : searchBtn.innerHTML = 'Rechercher';
-      asideImgSize();
-    }
-
-    window.onresize = changeBtnSearch;
-  </script>
 </body>
 
 </html>

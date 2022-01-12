@@ -7,11 +7,11 @@
 }
 
 section {
-  padding: 30px 40px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  padding: 30px 40px;
   border-radius: 30px;
   background: var(--gris-light);
 }
@@ -26,19 +26,28 @@ aside {
 
 section > div:first-child,
 aside > div:first-child {
-  padding: 10px;
-  margin-bottom: 30px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-align: baseline;
       align-items: baseline;
+  margin-bottom: 30px;
   font-size: x-large;
+}
+
+#loupe {
+  display: none;
 }
 
 #icon-popu {
   font-size: x-large;
+}
+
+#afficherPlus {
+  font-size: large;
+  font-weight: 700;
+  padding: 15px 0;
 }
 
 #hebergements {
@@ -62,8 +71,6 @@ aside > div:first-child {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -78,8 +85,8 @@ aside > .container {
   height: 450px;
 }
 
-/* CARDS */
 
+/* CARDS */
 .card {
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +96,7 @@ aside > .container {
 }
 
 .card img {
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition-property: transform width;
@@ -109,14 +116,10 @@ aside > .container {
   padding: 10px;
 }
 
-.card-rating {
-  justify-self: flex-end;
-}
-
 #hebergements .card {
   -ms-flex-direction: column;
       flex-direction: column;
-  width: 250px;
+  width: 200px;
   max-width: 600px;
   -ms-flex-positive: 1;
       flex-grow: 1;
@@ -137,21 +140,25 @@ aside > .container {
 
 
 #populaires .card {
-  height: 150px;
+  min-height: 150px;
+  -ms-flex: 1 0 1;
+      flex: 1 0 1;
   border: 6px solid white;
 }
 
 #populaires .card-image {
-  min-width: 150px;
-  height: 150px;
+  min-width: 40%;
+  -ms-flex: 1 1 1;
+      flex: 1 1 1;
+  min-height: 150px;
   position: relative;
   overflow: hidden;
   border-radius: 15px 0 0 15px;
-  background: red;
 }
 
 #populaires img {
   min-width: 100%;
+  min-height: 100%;
 }
 
 
@@ -192,26 +199,19 @@ aside .card-title {
 
 aside .card:first-child .card-image {
   height: 380px;
-  background: green;
 }
-
 aside .card:nth-child(2) .card-image {
   height: 200px;
-  background: red;
 }
-
 aside .card:nth-child(3) .card-image {
   height: 100px;
 }
-
 aside .card:nth-child(4) .card-image {
   height: 380px;
 }
-
 aside .card:nth-child(5) .card-image {
   height: 100px;
 }
-
 aside .card:nth-child(6) .card-image {
   height: 200px;
 }
@@ -237,7 +237,7 @@ aside .card:nth-child(6) .card-image {
 
 
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 992px) {
   .main-content {
     -ms-flex-direction: column;
         flex-direction: column;
@@ -256,65 +256,81 @@ aside .card:nth-child(6) .card-image {
   }
 
   aside > .container {
-    background: greenyellow;
     height: auto;
   }
-
 
   aside .card {
     width: auto;
   }
 
-  aside .card-image {
-    width: 100%;
+  aside .card:first-child .card-image {
+    height: 120px;
+  }aside .card:nth-child(2) .card-image {
+    height: 120px;
+  }
+  aside .card:nth-child(3) .card-image {
+    height: 120px;
+  }
+  aside .card:nth-child(4) .card-image {
+    height: 120px;
+  }
+  aside .card:nth-child(5) .card-image {
+    height: 120px;
+  }
+  aside .card:nth-child(6) .card-image {
+    height: 120px;
+  }
+
+  aside img {
+    top: 100px;
   }
 
   aside .card-body, aside .card-title {
     width: -moz-fit-content;
     width: fit-content;
   }
+
 }
 
 @media screen and (max-width: 768px) {
   .main-content {
-    -ms-flex-direction: column;
-        flex-direction: column;
     gap: 0;
   }
 
-  section {
-    padding: 30px 40px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
+  .container {
+    gap: 0;
+  }
+
+  section, aside {
     border-radius: 0;
-    background: var(--gris-light);
+    padding: 0 20px;
   }
 
-  aside {
+  #loupe {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    margin-top: 20px;
   }
 
-  #populaires {
-    -ms-flex-order: 1;
-        order: 1;
-    width: auto;
+  #rechercher {
+    display: none;
   }
 
   #hebergements {
-    -ms-flex-order: 2;
-        order: 2;
-    width: auto;
-    background: white;
+    background: none;
+    padding-top: 50px;
   }
 
-  aside > .container {
-    background: greenyellow;
-    height: auto;
+  #hebergements .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #hebergements .card-image {
+    min-height: 120px;
+  }
+
+  #populaires {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }

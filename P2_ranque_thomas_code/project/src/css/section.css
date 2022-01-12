@@ -5,9 +5,9 @@
 }
 
 section {
-  padding: 30px 40px;
   display: flex;
   flex-direction: column;
+  padding: 30px 40px;
   border-radius: 30px;
   background: var(--gris-light);
 }
@@ -20,16 +20,25 @@ aside {
 
 section > div:first-child,
 aside > div:first-child {
-  padding: 10px;
-  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  margin-bottom: 30px;
   font-size: x-large;
+}
+
+#loupe {
+  display: none;
 }
 
 #icon-popu {
   font-size: x-large;
+}
+
+#afficherPlus {
+  font-size: large;
+  font-weight: 700;
+  padding: 15px 0;
 }
 
 #hebergements {
@@ -49,7 +58,6 @@ aside > div:first-child {
 #populaires > .container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -61,8 +69,8 @@ aside > .container {
   height: 450px;
 }
 
-/* CARDS */
 
+/* CARDS */
 .card {
   display: flex;
   box-shadow: 0 5px 20px var(--gris-light2);
@@ -71,7 +79,7 @@ aside > .container {
 }
 
 .card img {
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition-property: transform width;
@@ -87,13 +95,9 @@ aside > .container {
   padding: 10px;
 }
 
-.card-rating {
-  justify-self: flex-end;
-}
-
 #hebergements .card {
   flex-direction: column;
-  width: 250px;
+  width: 200px;
   max-width: 600px;
   flex-grow: 1;
   border: 6px solid white;
@@ -120,12 +124,11 @@ aside > .container {
 
 #populaires .card-image {
   min-width: 40%;
-  flex: 1 0 1;
+  flex: 1 1 1;
   min-height: 150px;
   position: relative;
   overflow: hidden;
   border-radius: 15px 0 0 15px;
-  background: red;
 }
 
 #populaires img {
@@ -166,26 +169,19 @@ aside .card-title {
 
 aside .card:first-child .card-image {
   height: 380px;
-  background: green;
 }
-
 aside .card:nth-child(2) .card-image {
   height: 200px;
-  background: red;
 }
-
 aside .card:nth-child(3) .card-image {
   height: 100px;
 }
-
 aside .card:nth-child(4) .card-image {
   height: 380px;
 }
-
 aside .card:nth-child(5) .card-image {
   height: 100px;
 }
-
 aside .card:nth-child(6) .card-image {
   height: 200px;
 }
@@ -211,7 +207,7 @@ aside .card:nth-child(6) .card-image {
 
 
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 992px) {
   .main-content {
     flex-direction: column;
   }
@@ -227,57 +223,79 @@ aside .card:nth-child(6) .card-image {
   }
 
   aside > .container {
-    background: greenyellow;
     height: auto;
   }
-
 
   aside .card {
     width: auto;
   }
 
-  aside .card-image {
-    width: 100%;
+  aside .card:first-child .card-image {
+    height: 120px;
+  }aside .card:nth-child(2) .card-image {
+    height: 120px;
+  }
+  aside .card:nth-child(3) .card-image {
+    height: 120px;
+  }
+  aside .card:nth-child(4) .card-image {
+    height: 120px;
+  }
+  aside .card:nth-child(5) .card-image {
+    height: 120px;
+  }
+  aside .card:nth-child(6) .card-image {
+    height: 120px;
+  }
+
+  aside img {
+    top: 100px;
   }
 
   aside .card-body, aside .card-title {
     width: fit-content;
   }
+
 }
 
 @media screen and (max-width: 768px) {
   .main-content {
-    flex-direction: column;
     gap: 0;
   }
 
-  section {
-    padding: 30px 40px;
-    display: flex;
-    flex-direction: column;
+  .container {
+    gap: 0;
+  }
+
+  section, aside {
     border-radius: 0;
-    background: var(--gris-light);
+    padding: 0 20px;
   }
 
-  aside {
+  #loupe {
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
   }
 
-  #populaires {
-    order: 1;
-    width: auto;
+  #rechercher {
+    display: none;
   }
 
   #hebergements {
-    order: 2;
-    width: auto;
-    background: white;
+    background: none;
+    padding-top: 50px;
   }
 
-  aside > .container {
-    background: greenyellow;
-    height: auto;
+  #hebergements .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #hebergements .card-image {
+    min-height: 120px;
+  }
+
+  #populaires {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
