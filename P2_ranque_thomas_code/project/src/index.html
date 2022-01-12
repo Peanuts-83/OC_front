@@ -47,7 +47,7 @@
           En plein centre ville ou en pleine nature
         </p>
 
-
+         <!--TODO: bt change(loupe) on small size-->
         <div class="search">
           <div id="ico"><i class="fas fa-map-marker-alt"></i></div>
           <input type="text" name="town" id="townSearch" placeholder="Marseille, France">
@@ -369,7 +369,7 @@
       </section>
     </div>
 
-
+     <!--TODO: fix ASIDE for tablets & mobils-->
     <aside>
       <div>
         <a href="#"><strong>Activités à Marseille</strong></a>
@@ -474,9 +474,10 @@
       </div>
     </aside>
   </main>
+   <!--TODO: add FOOTER section-->
 
 
-
+  <!--TODO: delete all JS!-->
   <script>
     const searchBtn = document.querySelector('#btnSearch');
     const asideImg = document.querySelectorAll('aside .card-image');
@@ -488,28 +489,6 @@
       asideImgSize();
     }
 
-
-
-    function asideImgSize() {
-      let heights = [380, 200, 100, 380, 100, 200];
-      let i = 0;
-      console.log(window.innerWidth);
-      if (window.innerWidth > 992) {
-        for (let h of heights) {
-          asideImg[i].setAttribute('style', `height: ${h}px`);
-          console.log(asideImg[i]);
-          i++;
-        }
-      } else {
-        for (let h of heights) {
-          asideImg[i].setAttribute('style', `height: 250px`);
-          console.log(asideImg[i]);
-          i++;
-        }
-      }
-    }
-
-    //window.onload = asideImgSize;
     window.onresize = changeBtnSearch;
   </script>
 </body>
