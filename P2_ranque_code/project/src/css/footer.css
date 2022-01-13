@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  margin-top: 50px;
+  padding: 50px 40px;
+  background: var(--gris-light);
+}
+
+footer div {
+  margin-right: 20%;
+}
+
+@media screen and (max-width: 992px) {
+  footer {
+    padding: 50px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
