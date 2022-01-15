@@ -1,0 +1,6 @@
+[submodule "ThomasRanque_3_13012022"]
+	path = ThomasRanque_3_13012022
+	url = git@github.com:Peanuts-83/ThomasRanque_3_13012022.git
+[submodule "P3/ThomasRanque_3_13012022"]
+	path = P3/ThomasRanque_3_13012022
+	url = git@github.com:Peanuts-83/ThomasRanque_3_13012022.git
