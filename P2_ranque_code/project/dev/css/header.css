@@ -23,6 +23,8 @@ a:hover {
 
 body {
   box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 h1, h2 {
