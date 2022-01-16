@@ -1,102 +1,89 @@
 body {
-    background: lightgrey;
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 17px;
+  background: rgb(173, 173, 173);
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: medium;
+}
+/*
+div {
+  border: 1px dashed red;
+}
+*/
+
+.container {
+  width: 500px;
+  height: 100vw;
+  background: lightgrey;
+}
+.container2 {
+  width: 250px;
+  height: 100%;
+  background: rgb(170, 170, 170);
 }
 
-.btn {
-    display: flex;
-    align-items: flex end;
-    position: relative;
-    width: fit-content;
-    border-radius: 15px;
-    padding: 10px 50px 0 10px ;
-    box-shadow: 3px 3px 5px rgb(195, 195, 195);
-    cursor: pointer;
-    background: white;
-    overflow: hidden;
-}
 
-.green {
-    display: flex;
-    position: absolute;
-    top: 0;
-    right: 0;
-    justify-content: center;
-    align-items: center;
+.btn-menu {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  border-radius: 20px;
+  background: white;
+  overflow: hidden;
+  &:hover .btn-square {
     width: 80px;
-    height: 86px;
-    background: rgb(128, 226, 210);
-    border-radius: 0 15px 15px 0;
-    font-size: xx-large;
-    color: white;
-    transition: ease-in-out .5s;
-    transform: translateX(100%);
-}
-
-.fas {
-    transform: rotate(-360deg);
-    transition: transform ease-in .4s .2s;
-}
-
-.hideText {
-    opacity: 0;
-    padding: 0 40px 0 5px;
-    background: white;
-    position: absolute;
-    bottom: 17px;
-    right: 10px;
-    transform: translateX(0px);
-    transition: transform ease-in .3s, opacity ease-in 0s .4s;
-}
-
-.btn:hover > .greenBtn {
-    transform: translateX(0%);
-}
-
-.btn:hover .hideText {
+  }
+  &:hover .fas {
     opacity: 1;
-    transform: translateX(-50px);
-    transition: transform ease-in .3s .1s;
+    transform: rotate(360deg);
+    transition: transform ease-in .4s;
+  }
 }
 
-.btn:hover .fas {
+.btn-content {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: calc(100% - 120px);
+  flex: 3 3 auto;
+  padding-left: 20px;
+  .btn-title {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 18px;
+  }
+  .btn-txt {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 15px;
+  }
+}
+
+.btn-price {
+  display: flex;
+  align-items: flex-end;
+  padding: 0 15px 18px 2px;
+}
+
+.btn-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  width: 0;
+  height: 80px;
+  background: lightgreen;
+  overflow: hidden;
+  transition: all ease-out .4s;
+  .fas {
+    opacity: 0;
+    color: white;
+    font-size: x-large;
     transform: rotate(0deg);
+    transition: none;
+  }
 }
-
-
-/* ############### LOADER SPINNER ################ */
-    .loader {
-        position: relative;
-        top: 200px;
-    }
-  .loader div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
-    border: 8px solid #fff;
-    border-radius: 50%;
-    animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #fff transparent transparent transparent;
-  }
-  .loader div:nth-child(1) {
-    animation-delay: -0.45s;
-  }
-  .loader div:nth-child(2) {
-    animation-delay: -0.3s;
-  }
-  .loader div:nth-child(3) {
-    animation-delay: -0.15s;
-  }
-  @keyframes loader {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
