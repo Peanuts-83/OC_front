@@ -41,21 +41,21 @@ aside > div:first-child {
   padding: 15px 0;
 }
 
-#hebergements {
+.hebergements {
   width: 70%;
 }
 
-#hebergements > .container {
+.hebergements > .container {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-#populaires {
+.populaires {
   width: 30%;
 }
 
-#populaires > .container {
+.populaires > .container {
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -95,7 +95,7 @@ aside > .container {
   padding: 10px;
 }
 
-#hebergements .card {
+.hebergements .card {
   flex-direction: column;
   width: 200px;
   max-width: 600px;
@@ -103,26 +103,26 @@ aside > .container {
   border: 6px solid white;
 }
 
-#hebergements .card-image {
+.hebergements .card-image {
   min-height: 150px;
   position: relative;
   overflow: hidden;
   border-radius: 15px 15px 0 0;
 }
 
-#hebergements img {
+.hebergements img {
   top: 40%;
   width: 100%;
 }
 
 
-#populaires .card {
+.populaires .card {
   min-height: 150px;
   flex: 1;
   border: 6px solid white;
 }
 
-#populaires .card-image {
+.populaires .card-image {
   min-width: 40%;
   flex: 1;
   min-height: 150px;
@@ -131,7 +131,7 @@ aside > .container {
   border-radius: 15px 0 0 15px;
 }
 
-#populaires img {
+.populaires img {
   min-width: 100%;
   min-height: 100%;
 }
@@ -212,12 +212,12 @@ aside .card:nth-child(6) .card-image {
     flex-direction: column;
   }
 
-  #populaires {
+  .populaires {
     order: 1;
     width: auto;
   }
 
-  #hebergements {
+  .hebergements {
     order: 2;
     width: auto;
   }
@@ -256,6 +256,10 @@ aside .card:nth-child(6) .card-image {
     width: fit-content;
   }
 
+  aside .card-title {
+    padding-top: 5px;
+  }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -280,21 +284,21 @@ aside .card:nth-child(6) .card-image {
     display: none;
   }
 
-  #hebergements {
+  .hebergements {
     background: none;
     padding-top: 50px;
   }
 
-  #hebergements .card {
+  .hebergements .card {
     width: 100%;
     max-width: 100%;
   }
 
-  #hebergements .card-image {
+  .hebergements .card-image {
     min-height: 150px;
   }
 
-  #populaires {
+  .populaires {
     padding-top: 50px;
     padding-bottom: 50px;
   }

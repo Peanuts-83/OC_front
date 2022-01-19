@@ -24,7 +24,7 @@ a:hover {
 body {
   box-sizing: border-box;
   margin: 0 auto;
-  max-width: 1440px;  
+  max-width: 1440px;
 }
 
 h1, h2 {
@@ -42,7 +42,7 @@ header {
 }
 
 #logo {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 nav {
@@ -60,12 +60,6 @@ nav > a {
 }
 
 nav > a:hover {
-  border-top: 4px solid var(--bleu);
-  border-bottom: 4px solid rgba(255,255,255,0);
-  color: var(--bleu);
-}
-
-#active {
   border-top: 4px solid var(--bleu);
   border-bottom: 4px solid rgba(255,255,255,0);
   color: var(--bleu);
