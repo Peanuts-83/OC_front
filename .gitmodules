@@ -4,3 +4,6 @@
 [submodule "P4/GameOn-website-FR"]
 	path = P4/GameOn-website-FR
 	url = git@github.com:Peanuts-83/GameOn-website-FR.git
+[submodule "P6/ThomasRanque_6_24012022"]
+	path = P6/ThomasRanque_6_24012022
+	url = git@github.com:Peanuts-83/ThomasRanque_6_24012022.git
