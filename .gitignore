@@ -2,6 +2,7 @@
 slide/
 sources/
 Sample Photos/
+node_modules/
 
 
 ## Ignore Visual Studio temporary files, build results, and
