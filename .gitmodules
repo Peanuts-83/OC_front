@@ -13,3 +13,6 @@
 [submodule "P11/P11_Kasa"]
 	path = P11/P11_Kasa
 	url = git@github.com:Peanuts-83/P11_Kasa.git
+[submodule "P9/ThomasRanque_9_24022022"]
+	path = P9/ThomasRanque_9_24022022
+	url = git@github.com:Peanuts-83/ThomasRanque_9_24022022.git
