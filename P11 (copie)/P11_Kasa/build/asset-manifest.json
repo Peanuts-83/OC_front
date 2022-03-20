@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6a9d9ebd.css",
+    "main.js": "/static/js/main.6b4edda0.js",
+    "static/media/fond_paysage.png": "/static/media/fond_paysage.d040f0dabda745fda3f2.png",
+    "static/media/fond_paysage2.png": "/static/media/fond_paysage2.fce6fc3e9ed27433e9b0.png",
+    "static/media/LOGO.svg": "/static/media/LOGO.bb1c78bdbf97911cf6044e13e0c4f670.svg",
+    "index.html": "/index.html",
+    "main.6a9d9ebd.css.map": "/static/css/main.6a9d9ebd.css.map",
+    "main.6b4edda0.js.map": "/static/js/main.6b4edda0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a9d9ebd.css",
+    "static/js/main.6b4edda0.js"
+  ]
+}
