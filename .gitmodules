@@ -16,3 +16,12 @@
 [submodule "P9/ThomasRanque_9_24022022"]
 	path = P9/ThomasRanque_9_24022022
 	url = git@github.com:Peanuts-83/ThomasRanque_9_24022022.git
+[submodule "P12/--force"]
+	path = P12/--force
+	url = git@github.com:Peanuts-83/P12_SportSee_back.git
+[submodule "P12/P12_SportSee_back"]
+	path = P12/P12_SportSee_back
+	url = git@github.com:Peanuts-83/P12_SportSee_back.git
+[submodule "P12/P12_SportSee_front"]
+	path = P12/P12_SportSee_front
+	url = git@github.com:Peanuts-83/P12_SportSee_front.git
