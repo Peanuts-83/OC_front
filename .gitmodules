@@ -25,3 +25,6 @@
 [submodule "P12/P12_SportSee_front"]
 	path = P12/P12_SportSee_front
 	url = git@github.com:Peanuts-83/P12_SportSee_front.git
+[submodule "P13/P13-Bank-API"]
+	path = P13/P13-Bank-API
+	url = git@github.com:Peanuts-83/P13-Bank-API.git
