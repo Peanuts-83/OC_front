@@ -1,11 +1,11 @@
-# P6: JS, JSON & design pattern / FishEye website.
+# P6: Design pattern & Accessibilité / FishEye website
+
+[LE PROJET](https://github.com/Peanuts-83/ThomasRanque_6_24012022/tree/main)
 
 Avec votre cheffe de projet Amanda et le Designer UI, vous venez de faire une réunion de lancement du projet avec un nouveau client, FishEye. FishEye est un site web qui permet aux photographes indépendants de présenter leurs meilleurs travaux. Ils ont récemment levé des fonds et aimeraient mettre à jour leur site web.
 
-https://course.oc-static.com/projects/Front-End+V2/P5+Javascript+%26+Accessibility/Notes+de+re%CC%81union.pdf
+Deux points importants sont à respecter :
 
-https://www.figma.com/file/Q3yNeD7WTK9QHDldg9vaRl/UI-Design-FishEye-FR?node-id=0%3A1
+* **Accessibilité** aux personnes mal-voyantes faisant usage de lecteurs d'écrans.
 
-https://github.com/OpenClassrooms-Student-Center/Front-End-Fisheye/blob/main/data/photographers.json
-
-https://github.com/OpenClassrooms-Student-Center/Front-End-Fisheye
+* Mise en place d'un **pattern Factory Design** au niveau du javascript pour gérer les profils de photographes de manière dynamique.
