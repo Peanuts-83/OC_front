@@ -1,17 +1,19 @@
-# P10: AGILE, Kanban & user stories / Learn@home app.
+# P10: PROJECT MANAGEMENT - AGILE, Kanban & user stories / Learn@home
 
-Vous êtes employé depuis 5 ans chez Dev4U, une entreprise de services du numérique.
+[![Use case diagram](./hp.png)](https://www.figma.com/file/06oL44BJOvBtozlZE8NGAU/Learn%40Home---Maquettes?node-id=0%3A1) - Design on Figma
 
-Learn@Home est une association qui met en relation des enfants en difficulté scolaire avec des tuteurs bénévoles. En gros, leur objectif est de permettre à tout élève, où qu’il soit, d’avoir accès à un soutien scolaire à distance. Ils nous ont confirmé qu’ils voulaient travailler avec nous sur leur projet de site web.
+You have been employed for 5 years at Dev4U, a digital services company.
 
-Notre première étape est de bien définir les besoins client, avant de démarrer le développement logiciel pur. Nous avons prévu une nouvelle réunion dans quelques semaines, l’objectif est que tu leur présentes les éléments suivants :
+Learn@Home is an association that connects children with learning difficulties with volunteer tutors. Basically, their goal is to allow any student, anywhere, to have access to remote tutoring. They confirmed to us that they wanted to work with us on their website project.
 
-* Les diagrammes de cas d’usage pour chacune des fonctionnalités majeures de chaque page (connexion, chat, calendrier, gestionnaire de tâches, tableau de bord), pas besoin d’utiliser l’UML.
-* Les user stories avec critère(s) d’acceptation pour chacune des fonctionnalités, partagées dans un format standard (PDF, DOCX, XLSX).
-* Les maquettes du site avec un design simple et au moins une maquette par page (tu peux utiliser Figma ou Sketch).
-* Un Kanban découpant le projet, de manière macro (détails techniques exclus) en blocs de fonctionnalités et sous-fonctionnalités pour le développement. J’ai démarré le découpage dans ce kanban sur Notion, à toi de finir de compléter la colonne ”ANALYZE” sur le même modèle. Tu peux travailler sur Notion, Trello ou GitHub.
+Our first step is to clearly define the customer's needs, before starting pure software development. We have scheduled a new meeting in a few weeks, the objective is that you present the following elements to them:
 
-https://www.notion.so/Dev4U-projet-Learn-Home-972828849f7947289c23756d323a6335
+* **Use case diagrams** for each of the major features of each page (login, chat, calendar, task manager, dashboard), no need to use UML.
+* **User stories** with acceptance criteria(s) for each feature, shared in a standard format (PDF, DOCX, XLSX).
+* **Site mockups** with a simple design and at least one mockup per page (you can use Figma or Sketch).
+* A **Kanban** dividing the project, in a macro way (technical details excluded) into blocks of functionalities and sub-functionalities for development. I started the breakdown in this kanban on Notion, it's up to you to finish completing the "ANALYZE" column on the same model. You can work on Notion, Trello or GitHub.
 
-https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P8+-+Gestion+de+projet/Notes+-+Re%CC%81union+Learn%40Home.pdf
 
+[![Use case diagram](./trello.png)](.https://trello.com/b/rv6OOGiW/p10kanbanlearnhome) - Kanban
+[![Use case diagram](./pdf.png)](./Ranque_Thomas_1_diagramme_cas_usage_032022.pdf) - Use case diagram
+[![Use case diagram](./pdf.png)](./Ranque_Thomas_1_diagramme_cas_usage_032022.pdf) - User stories
