@@ -14,6 +14,6 @@ Our first step is to clearly define the customer's needs, before starting pure s
 * A **Kanban** dividing the project, in a macro way (technical details excluded) into blocks of functionalities and sub-functionalities for development. I started the breakdown in this kanban on Notion, it's up to you to finish completing the "ANALYZE" column on the same model. You can work on Notion, Trello or GitHub.
 
 
-[![Use case diagram](./trello.png)](.https://trello.com/b/rv6OOGiW/p10kanbanlearnhome) - Kanban
+[![Use case diagram](./trello.png)](https://trello.com/b/rv6OOGiW/p10kanbanlearnhome) - Kanban
 [![Use case diagram](./pdf.png)](./Ranque_Thomas_1_diagramme_cas_usage_032022.pdf) - Use case diagram
-[![Use case diagram](./pdf.png)](./Ranque_Thomas_1_diagramme_cas_usage_032022.pdf) - User stories
+[![Use case diagram](./pdf.png)](./Ranque_Thomas_2_user_stories_032022.pdf) - User stories
