@@ -3,6 +3,8 @@
 [![Use case diagram](./hp.png)](https://www.figma.com/file/06oL44BJOvBtozlZE8NGAU/Learn%40Home---Maquettes?node-id=0%3A1) - Design on Figma
 [![Project's presentation SlideShow](./pdf.png)](./Slide_P10.pdf) - SlideShow
 
+## Project's presentation
+
 You have been employed for 5 years at Dev4U, a digital services company.
 
 Learn@Home is an association that connects children with learning difficulties with volunteer tutors. Basically, their goal is to allow any student, anywhere, to have access to remote tutoring. They confirmed to us that they wanted to work with us on their website project.
