@@ -31,3 +31,6 @@
 [submodule "P2/P2_Booki"]
 	path = P2/P2_Booki
 	url = git@github.com:Peanuts-83/P2_Booki.git
+[submodule "P13/P13-Bank-Front"]
+	path = P13/P13-Bank-Front
+	url = git@github.com:Peanuts-83/P13-Bank-Front.git
