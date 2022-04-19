@@ -14,7 +14,7 @@ e-learning for front-end React knowledge.
 * [P4: JS landing page / GameOn website.](./P4/)
 
 [![vignette](./P4/GameOn-website-FR/vignette.png)](./P4/)
-* P5: Tests JS.
+* P5: Tests JS. 
 
 * [P6: JS, JSON & design pattern / FishEye website.](./P6/)
 
