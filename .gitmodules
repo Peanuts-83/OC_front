@@ -34,3 +34,9 @@
 [submodule "P13/P13-Bank-Front"]
 	path = P13/P13-Bank-Front
 	url = git@github.com:Peanuts-83/P13-Bank-Front.git
+[submodule "P14/old_front_end"]
+	path = P14/old_front_end
+	url = git@github.com:OpenClassrooms-Student-Center/P12_Front-end.git
+[submodule "P14/p14_wealth_health"]
+	path = P14/p14_wealth_health
+	url = git@github.com:Peanuts-83/p14-wealth_health.git
