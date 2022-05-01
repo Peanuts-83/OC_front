@@ -40,3 +40,6 @@
 [submodule "P14/p14_wealth_health"]
 	path = P14/p14_wealth_health
 	url = git@github.com:Peanuts-83/p14-wealth_health.git
+[submodule "P14/P14-wealth_health"]
+	path = P14/P14-wealth_health
+	url = git@github.com:Peanuts-83/P14-wealth_health.git
